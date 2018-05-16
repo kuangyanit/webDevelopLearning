@@ -1,0 +1,31 @@
+- hr(水平横线)
+
+`````html
+<p>这是第一段</p>
+<hr>
+<p>这是第二段</p>
+`````
+
+
+- address(会以斜体显示地址)
+
+`````html
+<address>address</address>
+`````
+
+- code(用于包装代码)
+
+`````html
+<code>int a =3</code>
+`````
+
+- pre(预格式化文本)
+`````javascript
+<pre>
+var message="欢迎";
+for(var i = 1; i<=10 ; i++)
+{
+    alert(message); 
+}
+</pre>
+`````
