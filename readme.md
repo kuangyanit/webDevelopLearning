@@ -1,11 +1,21 @@
-### 1. 用途
+# vue-cli-proj
 
-用于记录前端学习心得和代码
+## Project setup
+```
+npm install
+```
 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-### 2. 格式
+### Compiles and minifies for production
+```
+npm run build
+```
 
-date-description
-
-如20180516-html基础
-
+### Lints and fixes files
+```
+npm run lint
+```
