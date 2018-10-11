@@ -8,6 +8,15 @@ export default new Vuex.Store({
     com_pageName_mutations: null,
     com_pageName_actions: null
   },
+  getters:{
+    com_pageName_mutations_withdate: state => {
+      var date = new Date().toString()
+      return state.com_pageName_actions + date
+    },
+    com_pageName_actions_withdate: (state, getters) => {
+      return state.com_pageName_actions + getters.com_pageName_mutations_withdate
+    }
+  },
   //只支持同步
   mutations: {
     SET_COM_PAGENAME_MUTATIONS_MUTATIONSTYLE(state, value){
@@ -16,6 +25,7 @@ export default new Vuex.Store({
     SET_COM_PAGENAME_ACTIONS_MUTATIONSTYLE(state, value){
       state.com_pageName_actions = value
     }
+    
   },
   //同步异步均支持
   actions: {
