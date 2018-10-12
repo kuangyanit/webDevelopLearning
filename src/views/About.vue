@@ -18,12 +18,19 @@
 
 import { mapGetters, mapActions, mapMutations } from 'vuex'
 
+import backend_fundebug from 'fundebug-javascript'
+
+backend_fundebug.apikey = '4ccb1161c7d6b38284a07c6b4e90f7fa5cb28e8a86dc8d974192d55396c7ba74'
+
 export default{
   name: 'about',
   data(){
     return {
       pageName: '',
     }
+  },
+  mounted() {
+    backend_fundebug.notify('vue-init','vue-init-test-error')
   },
   methods: {
     //将mutations、actions提取成方法
